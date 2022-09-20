@@ -1,47 +1,47 @@
-// data types
-// String
-let name = "Ax-Sylvester Hommuk"
-console.log(name)
-console.log(typeof name)
+let val
 
-let goodMark = 5
-console.log(goodMark)
-console.log(typeof goodMark)
+// number -> String
+val = String(555)
+val = String(4+4)
+val = String(5.8)
 
-let percent = 50.3
-console.log(percent)
-console.log(typeof percent)
+// boolean -> String
+val = String(true)
+val = String(false)
 
-let isHere = true // false
-console.log(isHere)
-console.log(typeof isHere)
+// object -> String
+val = String(new Date())
 
-// arrays
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers)
-console.log(typeof numbers)
+// Null -> String
+val = String(null)
 
+// Array -> String
+val = String([1, 2, 3, 4, 5])
 
-// objects
-const person = {
-    firstname: 'Ax-Sylvester',
-    surname: 'Hommuk'
-}
+// undefined -> String
+val = String(undefined)
 
-console.log(person)
-console.log(typeof person)
+// toString()
+val = (true).toString()
 
-// Null
-const airplane = null
-console.log(airplane)
-console.log(typeof airplane)
+// String -> Number
+val = Number('5')
 
-// Symbol
-const sym = Symbol()
-console.log(sym)
-console.log(typeof sym)
+// Boolean -> Number
+val = Number(true) // true == 1, false == 0
 
-// undefined
-let test
-console.log(test)
-console.log(typeof test)
+// Null -> Number
+val = Number(null)
+
+// String -> Number
+val = Number("test")
+
+// Array -> Number
+val = Number([1, 2, 3])
+
+// String -> Integer
+val = parseInt('100.3')
+
+// String -> Float
+val = parseFloat('100.30')
+console.log(val)
