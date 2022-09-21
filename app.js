@@ -1,22 +1,27 @@
-const num1 = 100
-const num2 = 50
+const firstname = "ax-Sylvester"
+const surname = "Hommuk"
 
-let result
+let val = firstname + " " + surname
 
-result = num1 + num2
-result = num1 - num2
-result = num1 * num2
-result = num1 / num2
-result = num1 % num2
+val = "ax-Sylvester "
+val += surname
 
-result = Math.PI
-result = Math.round(2.5)
-result = Math.ceil(2.3)
-result = Math.floor(2.8)
-result = Math.sqrt(64)
-result = Math.abs(-3)
-result = Math.pow(8, 2)
+val = firstname.toUpperCase()
+val = surname.toLowerCase()
 
-result = Math.round(Math.random() * 11)
+val = surname[0]
+val = surname.indexOf("H")
+val = surname.lastIndexOf("m")
 
-console.log(result)
+val = surname.charAt(4)
+val = surname.charAt(surname.length - 1)
+
+val = surname.substring(0, 6)
+val = surname.slice(0, 4)
+val = surname.slice(-3)
+
+const tags = 'JS, HTML, CSS'
+val = tags.split(",")
+
+
+console.log(val[1].trim())
