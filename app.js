@@ -16,6 +16,7 @@ numbers1.pop()
 numbers1.unshift(120)
 numbers1.shift()
 
+
 val = numbers1.concat(numbers2)
 
 const fruits = ['banana', 'apple', 'orange']
