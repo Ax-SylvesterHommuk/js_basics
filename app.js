@@ -1,79 +1,40 @@
-/*
-if (condition) {
-    // if statements
-} else {
-    // else statements
+console.log("For loop")
+
+for (let numbers = 0; numbers < 10; i++) {
+    if (numbers == 5) {
+        continue
+    }
+    console.log(numbers)
 }
 
-== equals -> ===
-!= dosen't equal -> !==
- */
+console.log("while looping")
+let numbers1 = 0;
 
-let personID; // 55
-
-if (personID === undefined){
-    console.log("person is missing ID")
-} else if (personID !== undefined) {
-    console.log("person has ID")
-} else {
-    console.log("there was an error")
+while (numbers1 < 10) {
+    console.log(numbers1)
+    let number = numbers1++;
 }
 
-console.log(personID)
+console.log("do while loop")
+let numbers2 = 11;
 
-const color = "green"
+do {
+    console.log(numbers2)
+    numbers2++
+} while (numbers2 < 10)
 
-if (color == "red") {
-    console.log("Stop!")
-} else if (color == "yellow") {
-    console.log("Attention!")
-} else if (color == "green") {
-    console.log("Go!")
-} else {
-    console.log("Error!")
+const cars = ["Audi", "Tesla", "BMW"]
+cars.forEach(car) => {
+    console.log(car)
 }
 
-/*
-condition1 && condition2 - and
-condition1 || condition2 - and
- */
-
-const name = "Kadi"
-const age = 57
-
-if (age > 0 && age <= 12) {
-    console.log(`${name} on laps`)
-} else if (age > 12 && age <= 18) {
-    console.log(`${name} on nooruk`)
-} else {
-    console.log(`${name} on täiskasvanu`)
+const person = {
+    firstname: "Kadi",
+    surname: "Tamm",
+    age: 40
 }
 
-let id = 5
-
-if (id === 100) {
-    console.log("ok")
-} else {
-    console.log("not")
+for (let personKey in person) {
+    console.log(person[personKey])
 }
 
-// ? - ternary
-console.log(id === 100 ? 'Ok' : 'Not')
-
-// switch
-const color = "green"
-
-switch (color) {
-    case "red":
-        console.log("Stop!")
-        break;
-    case "yellow":
-        console.log("Start stopping!")
-        break
-    case "green":
-        console.log("Go!")
-        break;
-    default:
-        console.log("error")
-        break;
-}
