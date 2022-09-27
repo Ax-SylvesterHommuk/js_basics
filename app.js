@@ -1,41 +1,29 @@
 let val;
 
-// val = document.getElementById("task-form")
-// val = document.getElementById("task-form").id
-// val = document.getElementById("task").className
+const list = document.querySelector('ul')
+const listItems = document.querySelector('li')
 
-const taskTitle = document.getElementById("task-title")
+val = list
+val = list.childNodes
+val = list.childNodes[1]
+val = list.childNodes[1].nodeName
+val = list.childNodes[1].nodeType
 
-// style
-taskTitle.style.background = '#000000'
-taskTitle.style.color = '#fff'
-taskTitle.style.padding = '5px'
-// taskTitle.style.display = 'none'
+val = list.children
+val = list.children[1].children
 
-// content
-taskTitle.textContent = 'Defined Tasks'
-taskTitle.textContent = 'My Favorite Tasks'
-taskTitle.innerHTML = '<b style="color: red">My Tasks</b>'
+val = list.lastChild
+val = list.lastElementChild
 
-val = document.querySelector('#task-title')
-val = document.querySelector('.card-title')
-val = document.querySelector('ul')
-const task = document.querySelector('li')
-task.style.color = '#ffffff'
+val = list.childElementCount
 
-val = document.querySelector('li:last-child')
-val = document.querySelector('li:nth-child(odd)').style.background = '#ddd'
-val = document.querySelector('li:nth-child(even)').style.background = '#e7e7e7'
+val = listItems.parentNode
+val = listItems.parentElement
+val = listItems.parentElement.parentElement
 
-// multiple elements
-
-val = document.querySelectorAll('li')
-oddLi = document.querySelectorAll('li:nth-child(odd)')
-
-oddLi.forEach((li) => {
-    li.style.background = '#00ff66'
-})
-
+val = listItems.nextSibling
+val = listItems.nextElementSibling
+val = listItems.nextElementSibling.nextElementSibling
 
 
 console.log(val)
