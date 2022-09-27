@@ -1,40 +1,33 @@
-console.log("For loop")
+let val;
 
-for (let numbers = 0; numbers < 10; i++) {
-    if (numbers == 5) {
-        continue
-    }
-    console.log(numbers)
-}
+val = document
+val = document.all[6]
+val = document.all.length
 
-console.log("while looping")
-let numbers1 = 0;
+val= document.head
+val = document.body
 
-while (numbers1 < 10) {
-    console.log(numbers1)
-    let number = numbers1++;
-}
+val = document.doctype
+val = document.domain
+val = document.URL
+val = document.characterSet
+val = document.contentType
 
-console.log("do while loop")
-let numbers2 = 11;
+val = document.forms
+val = document.forms[0]
+val = document.forms[0].method
+val = document.forms[0].action
+val = document.forms[0].id
 
-do {
-    console.log(numbers2)
-    numbers2++
-} while (numbers2 < 10)
+val = document.links
+val = document.links[0]
+val = document.links[0].id
+val = document.links[0].className
+val = document.links[0].classList
+val = document.links[0].classList[2]
 
-const cars = ["Audi", "Tesla", "BMW"]
-cars.forEach(car) => {
-    console.log(car)
-}
-
-const person = {
-    firstname: "Kadi",
-    surname: "Tamm",
-    age: 40
-}
-
-for (let personKey in person) {
-    console.log(person[personKey])
-}
-
+val = document.scripts
+val = document.scripts[0]
+val = document.scripts[1]
+val = document.scripts[1].getAttribute("src")
+console.log(val)
