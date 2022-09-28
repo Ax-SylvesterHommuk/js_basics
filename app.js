@@ -1,29 +1,27 @@
-let val;
+const form = document.querySelector("form")
+const taskInput = document.querySelector("#task")
+const taskHeading = document.querySelector("#task-title")
 
-const list = document.querySelector('ul')
-const listItems = document.querySelector('li')
+// submit
+form.addEventListener("submit", runEvent)
 
-val = list
-val = list.childNodes
-val = list.childNodes[1]
-val = list.childNodes[1].nodeName
-val = list.childNodes[1].nodeType
+// keyboard
+// taskInput.addEventListener("keydown", runEvent)
+// taskInput.addEventListener("keyup", runEvent)
+// taskInput.addEventListener("keypress", runEvent)
 
-val = list.children
-val = list.children[1].children
-
-val = list.lastChild
-val = list.lastElementChild
-
-val = list.childElementCount
-
-val = listItems.parentNode
-val = listItems.parentElement
-val = listItems.parentElement.parentElement
-
-val = listItems.nextSibling
-val = listItems.nextElementSibling
-val = listItems.nextElementSibling.nextElementSibling
+// // focus
+// taskInput.addEventListener("blur", runEvent)
+// taskInput.addEventListener("focus", runEvent)
 
 
-console.log(val)
+taskInput.addEventListener("cut", runEvent)
+taskInput.addEventListener("paste", runEvent)
+taskInput.addEventListener("input", runEvent)
+
+
+function runEvent(event) {
+    console.log(`Event Type: ${event.type}`)
+    taskHeading.innerText = event.target.value
+    event.preventDefault()
+}
